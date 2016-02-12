@@ -1,0 +1,30 @@
+<!-- for server to work, you need to do 
+python -m SimpleHTTPServer 8000 -->
+
+<div class="topBar">
+  <div id="heading">
+    <span id="headerText">Lessons:</span>
+    <a class="button" id="index" href="index.html">1</a>
+    <a class="button" id="week2" href="week2.html">2</a>
+    <a class="button" id="week3" href="week3.html">3</a>
+    <a class="button" id="week4" href="week4.html">4</a>
+    <a class="button" id="week5" href="week5.html">5</a>
+    <a class="button" id="week6" href="week6.html">6</a>
+    <a class="button" id="week7" href="week7.html">7</a>
+    <a class="button" id="week8" href="week8.html">8</a>
+    <a class="button" id="week9" href="week9.html">9</a>
+    <a class="button" id="week10" href="week10.html">10</a>
+    <a class="button" id="projects" href="projects.html">Projects</a>
+    <a class="button" href="bonus.html">+</a> 
+    <a class="button" id="search" href="search.html">Dictionary</a>
+    <a class="button" id="game" href="game.html">Game</a>
+  </div>
+</div>
+
+<script type="text/javascript">
+  // highlight current page in the header
+  var curHtmlFile = document.location.href.split("/").pop();
+  var htmlFilename = curHtmlFile.substr(0, curHtmlFile.length - 5);
+  console.log(htmlFilename);
+  $("#"+htmlFilename).addClass("curPage");
+</script>

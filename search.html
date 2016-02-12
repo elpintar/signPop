@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html ng-app="game">
+<head>
+	<title>Sign Language Dictionary</title>
+  <link href="static/reset.css" rel="stylesheet" type="text/css">
+  <link href="static/sign.css" rel="stylesheet" type="text/css">
+  <link href="static/search.css" rel="stylesheet" type="text/css">
+  <script src="static/jquery-1.9.0.js"></script>
+  <script src="static/angular-1.2.26.min.js"></script>
+  <script src="static/gifObj.js"></script>
+  <!-- <script src="static/week.js"></script> -->
+  <script src="static/gifDict.js"></script>
+</head>
+<body>
+  
+  <div class="topBar">
+    <div ng-controller="HeaderController">
+      <div ng-include="'partials/header.html'"></div>
+    </div>
+  </div>
+
+  <div class="full-width">
+    <div class="weekTitle">
+      <h2>Sign Dictionary</h2>
+    </div>  
+  </div>
+
+  <div id="search" ng-controller="DictController as dictCtrl">
+    <div id="search-area" class="contentBox">
+
+    	<div id="form-area">
+    		<form id="searchForm" name="searchForm" ng-submit="submitGuess()">
+          <div>Search a word or phrase:</div>
+    			<div id="search-input-container" class="center-container">
+    				<input id="search-input" ng-model="guess"/>
+    			</div>
+          <p>{{report}}</p>
+
+    			<!-- <div id="guess-buttons">
+    				<input id="submit-guess" value="Submit" class="button" type="submit" />
+	    			<input id="show-answer" value="Show Answer" class="button" type="button" ng-click="dictCtrl.showAnswer()" />
+    			</div>
+    			<div id="continue-button">
+    				<input id="continue" value="Continue" class="button" type="button" ng-click="dictCtrl.nextWord(false)" />
+    			</div>
+    			<div id="restart-button">
+    				<input id="restart" value="Restart" class="button" type="button" ng-click="dictCtrl.restart()" />
+    			</div>
+          <div id="missed-word-button">
+            <input id="missed-word" value="Repeat Missed Words" class="button" type="button" ng-click="dictCtrl.doMissedWords()" />
+          </div> -->
+    		</form>
+    	</div>
+
+    	<!-- <div id="stats-area" class="center-container">
+  		  <div id="stats" class="center-container">
+  				<div id="score-str" class="center-container">Score: {{dictCtrl.score}}</p>
+  				<div id="info-str" class="center-container">Upcoming: {{dictCtrl.info.words_left}} &nbsp; Missed: {{dictCtrl.info.words_missed}} &nbsp; Current Run: {{dictCtrl.info.cur_run}} &nbsp; Max Run: {{dictCtrl.info.max_run}}</div>
+  			</div>
+    	</div>
+
+    	<div id="word-select" class="center-container">
+    		<div id="word-select-buttons" class="center-container">
+	    		<div id="select-all" ng-click="dictCtrl.selectAll()" class="button">
+	    			 Select All
+	    		</div>	    		
+	    		<div id="select-weeks" ng-click="dictCtrl.selectWeeks()" class="button">
+	    			 Select Weeks
+	    		</div>
+	    		<div id="select-none" ng-click="dictCtrl.selectNone()" class="button">
+	    			 Select None
+	    		</div>
+	    	</div>
+    		<span id="week-checkboxes" ng-repeat="weeki in dictCtrl.weeks">
+		      <label class="checkbox" for="weeki{{weeki}}">
+		        <input type="checkbox" ng-model="dictCtrl.checked[weeki]" id="week{{weeki}}" /> {{weeki}}-{{dictCtrl.weekNames[weeki]}}
+		        <span ng-if="weeki % 3 === 0"><br></span>
+		      </label>
+		    </span>
+    	</div>
+
+      <div id="end-game">
+        <div id="end-game-button" ng-click="dictCtrl.endEarly()" class="button">Stop Game</div>
+      </div> -->
+
+      <div id="search-results" class="center-container">
+        <!-- SEARCH RESULTS GO HERE -->
+      </div>
+
+    </div>
+  </div> 
+
+</body>
+</html>

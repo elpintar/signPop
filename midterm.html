@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="game">
+<head>
+	<title>Sign Language Review Game</title>
+  <link href="static/reset.css" rel="stylesheet" type="text/css">
+  <link href="static/sign.css" rel="stylesheet" type="text/css">
+  <link href="static/game.css" rel="stylesheet" type="text/css">
+  <script src="static/jquery-1.9.0.js"></script>
+  <script src="static/angular-1.2.26.min.js"></script>
+  <script src="static/gifObj.js"></script>
+  <script src="static/gifGame.js"></script>
+</head>
+<body>
+  
+  <div class="topBar">
+    <div ng-controller="HeaderController">
+      <div ng-include="'partials/header.html'"></div>
+    </div>
+  </div>
+
+  <div class="full-width">
+    <div class="weekTitle">
+      <h2>Secret Midterm Page</h2>
+    </div>  
+  </div>
+
+  <div id="game" ng-controller="GameController as gameCtrl">
+    <div class="contentBox desc">
+    	<div class="center-container">
+    		<p class="review-gif-box">
+    			<img class="loader-gif" src="./pictures/loader.gif" width="20px" height="20px" />
+     			<img id="sign-gif" src="" width="352px"/>
+    		</p>
+    	</div>
+    	<div id="guess-area">
+    		<form id="reviewForm" name="reviewForm" ng-submit="gameCtrl.submitGuess()">
+    			<p>{{gameCtrl.report}}</p>
+    			<div id="guess-input-container" class="center-container">
+    				<input id="guess-input" ng-model="gameCtrl.guess"/>
+    			</div>
+    			<div id="guess-buttons">
+    				<input id="submit-guess" value="Submit" class="button" type="submit" />
+	    			<input id="show-answer" value="Show Answer" class="button" type="button" ng-click="gameCtrl.showAnswer()" />
+    			</div>
+    			<div id="continue-button">
+    				<input id="continue" value="Continue" class="button" type="button" ng-click="gameCtrl.nextWord(false)" />
+    			</div>
+    			<div id="restart-button">
+    				<input id="restart" value="Restart" class="button" type="button" ng-click="gameCtrl.restart()" />
+    			</div>
+          <div id="missed-word-button">
+            <input id="missed-word" value="Repeat Missed Words" class="button" type="button" ng-click="gameCtrl.doMissedWords()" />
+          </div>
+    		</form>
+    	</div>
+    	<div id="stats-area" class="center-container">
+  		  <div id="stats" class="center-container">
+  				<div id="score-str" class="center-container">Score: {{gameCtrl.score}}</p>
+  				<div id="info-str" class="center-container">Upcoming: {{gameCtrl.info.words_left}} &nbsp; Missed: {{gameCtrl.info.words_missed}} &nbsp; Current Run: {{gameCtrl.info.cur_run}} &nbsp; Max Run: {{gameCtrl.info.max_run}}</div>
+  			</div>
+    	</div>
+      <div id="end-game">
+        <div id="end-game-button" ng-click="gameCtrl.endEarly()" class="button">End Midterm</div>
+      </div>
+    </div>
+  </div> 
+
+</body>
+</html>

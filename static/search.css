@@ -1,0 +1,70 @@
+
+.center-container{
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+#form-area #search-input {
+  margin-bottom: 1em;
+}
+
+.result-word-box {
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 200px;
+  display: inline-block;
+  padding: .5em;
+  vertical-align: text-top;
+}
+
+.gif-box {
+  width: 180px;
+  height: 147px;
+  background-color: #CBCBCB;
+  margin-top: 10px;
+}
+
+.gif-box .loader-gif {
+  top: 60px;
+  position: relative;
+}
+
+.gif-box .sign-gif {
+  z-index: 1;
+}
+
+#searchForm{
+  /*margin-top: -20px;*/
+}
+
+#searchForm .button{
+  font-size: 0.7em;
+}
+
+#searchForm #search-input{
+  font-size: 1em;
+  display: inline-block;
+  text-align: center;
+  background-color: #3ac;
+}
+
+#searchForm #search-input:focus{
+  outline: none;
+  color: white; /*#fe0;*/
+  border: none;
+  padding: 3px;
+}
+
+#select-weeks{
+  font-size: .7em;
+  margin-right: 1.5em;
+}
+
+#select-all,#select-none{
+  font-size: .5em;
+}
+
+#week-checkboxes label{
+  font-size: .7em;
+}

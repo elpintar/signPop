@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+<head>
+  <title>Week 6: Places</title>
+  <link href="static/reset.css" rel="stylesheet" type="text/css">
+  <script src="static/jquery-1.9.0.js"></script>
+  <script src="static/angular-1.2.26.min.js"></script>
+  <script src="static/week.js"></script>
+  <link href="static/sign.css" rel="stylesheet" type="text/css">
+</head>
+<body ng-app="header">
+  
+  <div class="topBar">
+    <div ng-controller="HeaderController">
+      <div ng-include="'partials/header.html'"></div>
+    </div>
+  </div>
+
+  <div class="weekTitle">
+    <h2>Week 6: Places</h2>
+  </div>
+  
+  <a id="video">
+    <div class="contentBox">
+      <h5>Video</h5>
+      <iframe src="http://player.vimeo.com/video/104268939" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+  </a>
+
+  <a id="lyrics">
+    <div class="contentBox">
+      <h5>Lyrics</h5>
+      <p class="note">(click/hover for ASL)</p>
+      <div class="altText">
+        <div class="shown">
+          <p>see we won&rsquo;t forget where we came from</p>
+
+          <p>the city won&rsquo;t change us</p>
+
+          <p>we beat to the same drum</p>
+
+          <p>now we won&rsquo;t forget where we came from</p>
+
+          <p>the city can&rsquo;t change us</p>
+
+          <p>we beat to the same drum</p>
+
+          <p>the same drum</p>
+          
+          <p>HEY!</p>
+
+          <p>la la la la la la la la</p>
+
+          <p>la la la la la la la oh</p>
+
+          <p>it don&rsquo;t matter where we go</p>
+
+          <p>we always find our way back home</p>
+
+          <p>la la la la la la la la</p>
+
+          <p>la la la la la la la oh</p>
+
+          <p>it don&rsquo;t matter where we go</p>
+
+          <p>we always find our way back home</p>
+        </div>
+        <div class="hidden">
+          <p>WE NOT FORGET WHERE WE CAME FROM</p>
+
+          <p>THE CITY NOT CHANGE US</p>
+
+          <p>WE BEAT BEAT SAME DRUM</p>
+
+          <p>WE NOT FORGET WHERE WE CAME FROM</p>
+
+          <p>THE CITY NOT CHANGE US</p>
+
+          <p>WE BEAT BEAT SAME DRUM</p>
+
+          <p>SAME DRUM</p>
+          <br>
+          <p>L-A L-A L-A L-A L-A L-A L-A L-A</p>
+
+          <p>L-A L-A L-A L-A L-A L-A L-A O-H</p>
+
+          <p>IT DOESN&rsquo;T MATTER WHERE WE GO</p>
+
+          <p>WE ALWAYS ARRIVE HOME</p>
+
+          <p>L-A L-A L-A L-A L-A L-A L-A L-A</p>
+
+          <p>L-A L-A L-A L-A L-A L-A L-A O-H</p>
+
+          <p>IT DOESN&rsquo;T MATTER WHERE WE GO</p>
+
+          <p>WE ALWAYS ARRIVE HOME</p>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a id="lyrics">
+    <div class="contentBox">
+      <h5>80% Speed Audio</h5>
+      <p class="note">You can use this for your assignment!</p>
+      <audio controls>
+        <source src="./static/backHomeSlower.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </a>
+
+  <a id="vocab">
+    <div class="contentBox">
+      <h5>Vocab</h5>
+      <div id="show-all" class="button">Show All</div>
+      <div id="vocabList">
+        <p id="where">WHERE</p>
+        <p id="from">FROM</p>
+        <p id="people">PEOPLE</p>
+        <p id="here">HERE</p>
+        <p id="come">COME</p>
+        <p id="go">GO</p>
+        <p id="arrive">ARRIVE</p>
+        <p id="home">HOME</p>
+        <p id="dorm">DORM</p>
+        <p id="house">HOUSE</p>
+        <p id="city">CITY</p>
+        <p id="room">ROOM</p>
+        <p id="bathroom">BATHROOM</p>
+        <p id="bed">BED</p>
+        <p id="sleep">SLEEP</p>
+        <p id="wakeUp">WAKE UP</p>
+        <p id="big">BIG</p>
+        <p id="small">SMALL</p>
+        <p id="money">MONEY</p>
+        <p id="dollars">DOLLAR</p>
+        <p id="buy">BUY</p>
+        <p id="shopping">SHOPPING</p>
+        <p id="doOrActivity">DO/ACTIVITY</p>
+        <p id="every">EVERY</p>
+        <p id="any">ANY</p>
+        <p id="noneOrNothing">NONE/NOTHING</p>
+        <p id="canOrPossible">CAN/POSSIBLE</p>
+        <p id="cant">CAN&rsquo;T</p>
+        <p id="same">SAME</p>
+        <p id="change">CHANGE</p>
+        <p id="alwaysOrOnly">ALWAYS/ONLY</p>
+        <p id="forget">FORGET</p>
+        <p id="text">TEXT</p>
+        <p id="phoneOrCall">PHONE/CALL</p>
+        <p id="number">NUMBER</p>
+        <p id="beatAsInMusic">BEAT (as in music)</p>
+        <p id="drum">DRUM</p>
+      </div>
+    </div>
+  </a>
+
+  <a id="conversations">
+    <div class="contentBox">
+      <h5>Conversation Starters</h5>
+        <p class="note">(click/hover for ASL)</p>
+        <div class="altText">
+          <div class="shown">
+            <p>Where are you from?</p>
+
+            <p>Where do you want to live in the future? In a city?</p>
+
+            <p>What do you dream of doing in life?</p>
+
+            <p>How many hours do you sleep every night?</p>
+
+            <p>Do you prefer calling or texting? </p>
+
+          </div>
+          <div class="hidden"> 
+            <p>FROM WHERE YOU?</p>
+
+            <p>FUTURE YOU WANT LIVE WHERE?  CITY?</p>
+
+            <p>YOU DREAM DO IN LIFE WHAT?</p>
+
+            <p>HOW MANY HOURS YOU SLEEP EVERY NIGHT?</p>
+
+            <p>YOU PREFER (FAVORITE) - CALLING, TEXTING - WHICH?</p>
+          </div>
+        </div>
+    </div>
+  </a>
+
+  <a id="video2">
+    <div class="contentBox">
+      <h5>Bonus Vocab!</h5>
+      <a class="button" href="http://www.lifeprint.com/asl101/pages-signs/p/places.htm">Specific City/Country Signs</a>
+      </br>
+      <a class="button" href="http://www.signingsavvy.com/browse-world">Signs for World Countries</a>
+    </div>
+  </a>
+
+  <a id="video">
+    <div class="contentBox">
+      <h5>Bonus Video</h5>
+      <iframe src="http://player.vimeo.com/video/87807627" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+  </a>
+
+  <a id="lyrics">
+    <div class="contentBox">
+      <h5>Bonus Video Lyrics</h5>
+      <p class="note">(click/hover for ASL)</p>
+      <div class="altText">
+        <div class="shown">
+          <p>today I don't feel like doing anything</p>
+
+          <p>I just wanna lay in my bed </p>
+
+          <p>don't feel like picking up my phone</p>
+
+          <p>so leave a message at the tone</p>
+
+          <p>'cause today I swear I'm not doing anything</p>
+
+          <p>nothing at all</p>
+
+          <p>ooh ooh, ooh ooh</p>
+
+          <p>nothing at all </p>
+        </div>
+        <div class="hidden">
+          <p>TODAY I NOT FEEL DO ANYTHING</p>
+
+          <p>I JUST WANT LAY BED (SLEEP IN)</p>
+
+          <p>NOT FEEL (PHONE RING) (PUSH AWAY)</p>
+
+          <p>LEAVE MESSAGE TONE</p>
+
+          <p>TODAY I SWEAR I NOT DO ANYTHING</p>
+
+          <p>NONE NONE NOTHING</p>
+
+          <p>O-O-H O-O-H, O-O-H O-O-H</p>
+
+          <p>NONE NONE NOTHING</p>
+        </div>
+      </div>
+    </div>
+  </a>
+
+</body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47730913-1', 'erikpintar.com');
+  ga('send', 'pageview');
+
+</script>
+
+
+</html>

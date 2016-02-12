@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+  <title>Week 3: Conversation</title>
+  <link href="static/reset.css" rel="stylesheet" type="text/css">
+  <script src="static/jquery-1.9.0.js"></script>
+  <script src="static/angular-1.2.26.min.js"></script>
+  <script src="static/week.js"></script>
+  <link href="static/sign.css" rel="stylesheet" type="text/css">
+</head>
+<body ng-app="header">
+  
+  <div class="topBar">
+    <div ng-controller="HeaderController">
+      <div ng-include="'partials/header.html'"></div>
+    </div>
+  </div>
+
+  <div class="weekTitle">
+    <h2>Week 3: Conversation</h2>
+  </div>
+  
+  <a id="video">
+    <div class="contentBox">
+      <h5>Video</h5>
+      <iframe src="http://player.vimeo.com/video/106783584" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+  </a>
+
+  <a id="lyrics">
+    <div class="contentBox">
+      <h5>Lyrics</h5>
+      <p class="note">(click/hover for ASL)</p>
+      <div class="altText">
+        <div class="shown">
+          <p>I wonder what would happen if you</p>
+
+          <p>say what you wanna say</p>
+
+          <p>and let the words fall out</p>
+
+          <p>honestly</p>
+
+          <p>I wanna see you be brave</p>
+
+          <br>
+
+          <p> with what you want to say</p>
+
+          <p>and let the words fall out</p>
+
+          <p>honestly</p>
+            
+          <p> I wanna see you be brave</p>
+
+          <br>
+
+          <p>just wanna see you</p>
+
+          <p>I just wanna see you</p>
+
+          <p>I just wanna see you</p>
+
+          <p>I wanna see you be brave </p>
+        </div>
+        <div class="hidden">
+          <p>I WONDER WHAT HAPPEN IF YOU</p>
+
+          <p>SAY WHAT YOU WANT SAY</p>
+
+          <p>LET WORD WORD SENTENCE</p>
+
+          <p>HONESTLY</p>
+
+          <p>I WANT SEE YOU BRAVE</p>
+
+          <br>
+
+          <p>WHAT YOU WANT SIGN</p>
+
+          <p>LET WORD WORD SENTENCE</p>
+
+          <p>HONESTLY</p>
+
+          <p>I WANT SEE YOU BRAVE</p>
+
+          <br>
+
+          <p>JUST WANT SEE YOU</p>
+
+          <p>I JUST WANT SEE YOU</p>
+
+          <p>I JUST WANT SEE YOU</p>
+
+          <p>I WANT SEE YOU BRAVE </p>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a id="vocab">
+    <div class="contentBox">
+      <h5>Vocab</h5>
+      <div id="show-all" class="button">Show All</div>
+      <div id="vocabList">
+        <p id="who">WHO</p>
+        <p id="hey">HEY</p>
+        <p id="whatAreYouDoing">WHAT ARE YOU DOING?</p>
+        <p id="whatsUp">WHAT&rsquo;S UP?</p>
+        <p id="what">WHAT (version 2)</p>
+        <p id="friend">FRIEND</p>
+        <p id="want">WANT</p>
+        <p id="dontWant">DON&rsquo;T WANT</p>
+        <p id="like">LIKE</p>
+        <p id="dontLike">DON&rsquo;T LIKE</p>
+        <p id="that">THAT</p>
+        <p id="with">WITH</p>
+        <p id="questionOrAsk">QUESTION/ ASK</p>
+        <p id="howOldAreYou">HOW OLD [are] YOU?</p>
+        <p id="doesntMatterOrWhatever">DOESN&rsquo;T MATTER/ WHATEVER</p>
+        <p id="movie">MOVIE</p>
+        <p id="songOrMusic">SONG/ MUSIC</p>
+        <p id="book">BOOK</p>
+        <p id="know">KNOW</p>
+        <p id="dontKnow">DON&rsquo;T KNOW</p>
+        <p id="understand">UNDERSTAND</p>
+        <p id="dontUnderstand">DON&rsquo;T UNDERSTAND</p>
+        <p id="sayOrTell">TELL/ SAY</p>
+        <p id="word">WORD</p>
+        <p id="sentence">SENTENCE</p>
+        <p id="please">PLEASE</p>
+        <p id="thankYou">THANK YOU</p>
+        <p id="noProblem">NO PROBLEM</p>
+        <p id="sorry">SORRY</p>
+        <p id="wonderOrThink">WONDER/ THINK</p>
+        <p id="finallyOrHappen">HAPPEN</p>
+        <p id="if">&nbsp;IF&nbsp;</p>
+        <p id="another">ANOTHER / OTHER / OR ELSE</p>
+        <p id="just">JUST</p>
+        <p id="letOrAllow">LET/ALLOW</p>
+        <p id="honestlyOrReallyOrTrueOrSure">HONESTLY/ REALLY/ TRUE/ SURE</p>
+        <p id="brave">BRAVE</p>
+        <p id="23,24,25,26,27,28,29,30">23,24,25,26, 27,28,29,30 </p>
+      </div>
+    </div>
+  </a>
+
+  <a id="conversations">
+    <div class="contentBox">
+      <h5>New Small Talk</h5>
+          <div class="shown">
+            <p>How old are you?</p>
+            <p>What's your favorite book/movie/song?</p>
+          </div>
+    </div>
+  </a>
+
+  <a id="story">
+    <div class="contentBox">
+      <h5>Story: Asking the Girl</h5>
+      <p class="note">(click/hover for ASL)</p>
+      <div class="altText">
+        <div class="shown">
+          <p>A: What's up?</p>
+          <p>B: Look at that girl.  Do you like her?<br>Is she your friend?</p>
+          <p>A: No. Ask for her name.</p>
+          <p>B: I wonder if she will watch a movie with me.</p>
+          <p>A: I don't think so.</p>
+          <p>B: Why?</p>
+          <p>A: I want to ask her too.</p>
+          <p>B: Oh I see.</p>
+          <p>A: Let me ask her.  You're awkward.</p>
+          <p>B: Please. I'm better.</p>
+          <p>A: Really?  I want to see you be brave.</p>
+          <p>B: I'll say the best line.  Watch me.</p>
+          <p>A: Ok.</p>
+          <p>...</p>
+          <p>B: Hello.  How are you?</p>
+          <p>C: Good!  Nice to meet you.</p>
+        </div>
+        <div class="hidden">
+          <p>A: WHAT'S UP?</p>
+          <p>B: LOOK THAT GIRL.  YOU LIKE HER?<br>SHE YOUR FRIEND?</p>
+          <p>A: NO. ASK NAME.</p>
+          <p>B: I WONDER IF SHE WATCH MOVIE WITH ME.</p>
+          <p>A: I NOT THINK SO.</p>
+          <p>B: WHY?</p>
+          <p>A: I WANT ASK TOO.</p>
+          <p>B: OH I SEE.</p>
+          <p>A: LET ME ASK.  YOU AWKWARD.</p>
+          <p>B: PLEASE. I BETTER.</p>
+          <p>A: REALLY?  I WANT SEE YOU BRAVE.</p>
+          <p>B: I SAY BEST SENTENCE.  WATCH ME.</p>
+          <p>A: O-K.</p>
+          <p>...</p>
+          <p>B: HELLO.  HOW ARE YOU?</p>
+          <p>C: GOOD!  NICE TO MEET YOU.</p>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a id="video2">
+    <div class="contentBox">
+      <h5>Deaf Culture Video: </br> Getting Someone's Attention</h5>
+      <iframe width="420" height="315" src="http://www.youtube.com/embed/GN-mBsy46QE" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </a>
+
+  <a id="video2">
+    <div class="contentBox">
+      <h5>Deaf Culture Video: </br> "Interrupting" Deaf Conversation</h5>
+      <iframe width="420" height="315" src="http://www.youtube.com/embed/MdKWsaylfcY" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </a>
+
+  <a id="video2">
+    <div class="contentBox">
+      <h5>Deaf Culture Video: </br> Conversations With Many People</h5>
+      <iframe width="420" height="315" src="http://www.youtube.com/embed/4KdbPlDnvDQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </a>
+
+</body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47730913-1', 'erikpintar.com');
+  ga('send', 'pageview');
+
+</script>
+
+
+</html>

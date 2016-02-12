@@ -1,0 +1,269 @@
+/* styles for erikpintar.com */
+
+/* transition, -webkit-transition:
+    attribute
+    duration
+    [linear, ease, ease-in, ease-out, ease-in-out]
+    delay
+*/
+
+body {
+  background-color: #fe0;
+  color: yellow;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 22px;
+}
+
+body div {
+  display: inline-block;
+}
+
+body a {
+  display: block;
+}
+
+/* title screen */
+
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin: .3em;
+  border-radius: 8px;
+  background-color: #3ac;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 1.5em;
+  border-radius: 4px;
+  background-color: #3ac;
+  margin: .3em;
+  padding: .15em;
+}
+
+h3 {
+  font-size: 1.2em;
+  border-radius: 4px;
+  background-color: #3ac;
+  margin: .3em;
+  padding: 0.5em 0em;
+  margin-top: -1.6em;
+}
+
+#title {
+  margin-top: 50px;
+}
+
+#title h2 {
+  margin: -20px 100px;
+  padding: 0px;
+  padding-bottom: 5px;
+}
+
+.weekTitle h2.lessMargBot {
+  margin-bottom: 0;
+}
+
+#enter {
+  margin: 100px;
+}
+
+
+.button {
+  border: 5px black solid;
+  display: inline-block;
+  text-indent: 0px;
+  margin: 7px 12px;
+  padding: 4px 13px;
+  font-size: 1.2em;
+  border-radius: 8px;
+  background-color: #888;
+  color: #ccc;
+  transition: border .1s ease-in-out, 
+    background-color .1s ease-in-out, 
+    color .1s ease-in-out;
+  -webkit-transition: border .1s ease-in-out, 
+    background-color .1s ease-in-out, 
+    color .1s ease-in-out;
+}
+
+.button:hover {
+  border: 5px white solid;
+  background-color: #333;
+  color: #888;
+  cursor: pointer;
+  transition: border .1s ease-in-out, 
+    background-color .1s ease-in-out, 
+    color .1s ease-in-out;
+  -webkit-transition: border .1s ease-in-out, 
+    background-color .1s ease-in-out, 
+    color .1s ease-in-out;
+}
+
+#playlist {
+  display: block;
+}
+
+#playlistBorder {
+  border: 20px #3ac solid;
+  border-radius: 20px;
+}
+
+/* Week Page */
+
+.weekTitle h2 {
+  padding: .4em 1em;
+  margin: 1em;
+}
+
+.topBar {
+  display: block;
+}
+
+#heading {
+  display: inline-block;
+  background-color: white;
+  padding: .25em 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+#headerText {
+  color: white;
+  background-color: #3ac;
+  margin: 1em .25em;
+  padding: .2em .5em;
+  border-radius: 8px;
+}
+
+#heading a {
+  background-color: #49a;
+  margin: .25em .25em;
+  padding: .1em .5em;
+  border-radius: 8px;
+  border: 5px #999 solid;
+  font-size: .8em;
+}
+
+#heading a:hover {
+  border-color: #ccc;
+  background-color: #6de;
+}
+
+#heading a.curPage {
+  border-color: black;
+  background-color: #39c;
+  color: white;
+}
+
+.contentBox {
+  display: inline-block;
+  margin: 1em 2em;
+  border-radius: 8px;
+  color: yellow;
+  background-color: #3ac;
+  padding: 1em 2em;
+  min-width: 18em;
+}
+
+h5 {
+  font-size: 1.3em;
+  margin: .5em;
+}
+
+p {
+  margin: .2em;
+}
+
+.source {
+  font-size: .5em;
+  padding: .5em;
+}
+
+/* for english/ASL toggle effect */
+
+.note{
+  margin-bottom: 1em;
+  font-size: .8em;
+}
+
+.shown {
+  display: inline;
+}
+
+.hidden {
+  display: none;
+}
+
+.orange {
+  color: white;
+}
+
+#vocabList p, #vocabList-nogif p {
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 200px;
+  //height: 200px;
+  display: inline-block;
+  padding: .5em;
+  vertical-align: text-top;
+}
+
+a.button, .inline-link {
+  text-decoration: none;
+}
+
+.inline-link {
+  display: inline;
+  color: #159;
+}
+.inline-link:hover {
+  color: #58b;
+}
+
+body:last-child {
+  margin-bottom: 2em;
+}
+
+
+p.small-column {
+  margin: 1em 4em;
+}
+
+.desc {
+  max-width: 700px;
+}
+
+/* sign gifs */
+
+#vocabList p .gif-box{
+  width: 180px;
+  height: 147px;
+  background-color: #CBCBCB;
+  margin-top: 10px;
+}
+#vocabList p .gif-box .play-box:hover{
+  content: url("../pictures/playHover.png");
+  cursor: pointer;
+}
+#vocabList p .loader-gif{
+  margin-top: 60px;
+}
+
+.sign-gif{
+  width: 180px;
+}
+
+#show-all{
+  font-size: .8em;
+  margin-bottom: 20px;
+}
+
+i {
+  font-style: italic;
+}
+
+.full-width{
+  width: 100%;
+}

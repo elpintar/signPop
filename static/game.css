@@ -1,0 +1,93 @@
+
+#game .contentBox{
+  margin-top: 0px;
+}
+
+#game .button{
+  margin: 7px 4px;
+}
+
+.center-container{
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.review-gif-box{
+  background-color: #3ac; /*#CBCBCB;*/
+  width: 352px;
+  height: 288px;
+  display: inline-block;
+}
+
+.review-gif-box #sign-gif{
+  width: 352px;
+  position: relative;
+  top: -24px;
+  z-index: 1;
+}
+
+.review-gif-box .loader-gif{
+  top: 130px;
+  position: relative;
+}
+
+#reviewForm{
+  /*margin-top: -20px;*/
+}
+
+#reviewForm .button{
+  font-size: 0.7em;
+}
+
+#reviewForm #guess-input{
+  font-size: 1em;
+  display: inline-block;
+  text-align: center;
+  background-color: #3ac;
+}
+
+#reviewForm #guess-input:focus{
+  outline: none;
+  color: white; /*#fe0;*/
+  border: none;
+  padding: 3px;
+}
+
+#reviewForm #continue-button,#restart-button,#missed-word-button{
+  display: none;
+}
+
+#stats{
+  margin-top: .7em;
+}
+
+#stats div{
+  width: auto;
+}
+
+#stats #info-str{
+  font-size: .7em;
+  margin-top: .7em;
+}
+
+#word-select{
+  margin-top: 1em;
+}
+
+#select-weeks{
+  font-size: .7em;
+  margin-right: 1.5em;
+}
+
+#select-all,#select-none{
+  font-size: .5em;
+}
+
+#week-checkboxes label{
+  font-size: .7em;
+}
+
+#end-game-button{
+  font-size: .7em;
+}

@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+  <title>Week 1: ABCs and 123s</title>
+  <link href="static/reset.css" rel="stylesheet" type="text/css">
+  <script src="static/jquery-1.9.0.js"></script>
+  <script src="static/angular-1.2.26.min.js"></script>
+  <script src="static/week.js"></script>
+  <link href="static/sign.css" rel="stylesheet" type="text/css">
+</head>
+<body ng-app="header">
+  
+  <div class="topBar">
+    <div ng-controller="HeaderController">
+      <div ng-include="'partials/header.html'"></div>
+    </div>
+  </div>
+  
+  <div id="title">
+    <h1>Sign Language</h1>
+    <h2>Through Pop Music</h2>
+  </div>
+  <br>
+  <br>
+
+  <div class="weekTitle">
+    <h2>Week 1: ABCs and 123s</h2>
+  </div>
+
+  <a id="syllabus">
+    <div class="contentBox">
+      <h5>Syllabus</h5>
+      <a href="docs/SignLanguageSyllabus4.pdf" class="button">View</a>
+    </div>
+  </a>
+  
+  <a id="video">
+    <div class="contentBox">
+      <h5>Video</h5>
+      <iframe src="http://player.vimeo.com/video/84331322" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+  </a>
+
+  <a id="lyrics">
+    <div class="contentBox">
+      <h5>Lyrics</h5>
+      <p class="note">(click/hover for ASL)</p>
+      <div class="altText">
+        <div class="shown">
+          <p>A B C</p>
+          <p>it's easy as</p>
+          <p>1 2 3</p>
+          <p>as simple as</p>
+          <p>do re mi</p>
+          <p>A B C</p>
+          <p>1 2 3</p>
+          <p>baby, you and me girl</p>
+        </div>
+        <div class="hidden">
+          <p>A B C</p>
+          <p>EASY</p>
+          <p>1 2 3</p>
+          <p>EASY</p>
+          <p>D R M</p>
+          <p>A B C</p>
+          <p>1 2 3</p>
+          <p>BABY, YOU AND ME, GIRL</p>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a id="vocab">
+    <div class="contentBox">
+      <h5>Vocab</h5>
+      <div id="show-all" class="button">Show All</div>
+      <div id="vocabList">
+        <p id="hello">HELLO</p>
+        <p id="myNameErik">MY NAME {is} ERIK</p>
+        <p id="yourNameWhat2">YOUR NAME {is} WHAT?</p>
+        <p id="niceMeetYou">NICE {to} MEET YOU</p>
+        <p id="copyMe">COPY ME</p>
+        <p id="signLanguage2">SIGN LANGUAGE</p>
+        <p id="learn">LEARN</p>
+        <p id="student">STUDENT</p>
+        <p id="teacher">TEACHER</p>
+        <p id="correct">CORRECT</p>
+        <p id="wrong">WRONG</p>
+        <p id="goodJob">GOOD JOB</p>
+        <p id="try2">TRY</p>
+        <p id="slow">SLOW</p>
+        <p id="spell">SPELL</p>
+        <p id="help">HELP</p>
+        <p id="yes">YES</p>
+        <p id="no">NO</p>
+        <p id="you">YOU</p>
+        <p id="me">I / ME</p>
+        <p id="heSheThey2">HE, SHE, THEY</p>
+        <p id="we2">WE</p>
+        <p id="youAndMe">YOU AND ME</p>
+        <p id="mine">MY/MINE</p>
+        <p id="yours">YOUR</p>
+        <p id="our">OUR</p>
+        <p id="their">THEIR</p>
+        <p id="meToo">ME TOO / LIKEWISE</p>
+        <p id="see2">SEE</p>
+        <p id="seeYouLater">SEE YOU LATER</p>
+        <p id="play">PLAY</p>
+        <p id="game">GAME</p>
+        <p id="sweetheart">BABY/ SWEETHEART</p>
+        <p id="girl">GIRL</p>
+        <p id="easy">SIMPLE, EASY </p>
+        <p id="oneToTen">1 - 10</p>
+      </div>
+    </div>
+  </a>
+
+  <a id="ABCs">
+    <div class="contentBox">
+      <h5>ABCs</h5>
+      <img src="pictures/ASLalphabet.png" alt="no picture found" width=700 >
+    </div>
+  </a>
+
+  <a id="1-10">
+    <div class="contentBox">
+      <h5>1-10</h5>
+      <img src="pictures/ASLnumbers.gif" alt="no picture found" width=400 >
+    </div>
+  </a>
+
+  <a id="links">
+    <div class="contentBox">
+      <h5>Links</h5>
+      <a href="http://asl.ms" class="button">Practice Fingerspelling!</a>
+      <a href="http://www.signasl.org" class="button">Sign Dictionary</a>
+      <a href="http://www.aslpro.com/cgi-bin/aslpro/aslpro.cgi" class="button">Another Sign Dictionary</a>
+    </div>
+  </a>
+
+  <a id="video2">
+    <div class="contentBox">
+      <h5>Deaf Culture Video</h5>
+      <iframe width="420" height="315" src="http://www.youtube.com/embed/P-Gc85nQK8w" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </a>
+
+</body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47730913-1', 'erikpintar.com');
+  ga('send', 'pageview');
+
+</script>
+
+
+</html>

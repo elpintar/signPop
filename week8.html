@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+  <title>Week 8: Clothes and Colors</title>
+  <link href="static/reset.css" rel="stylesheet" type="text/css">
+  <script src="static/jquery-1.9.0.js"></script>
+  <script src="static/angular-1.2.26.min.js"></script>
+  <script src="static/week.js"></script>
+  <link href="static/sign.css" rel="stylesheet" type="text/css">
+</head>
+<body ng-app="header">
+  
+  <div class="topBar">
+    <div ng-controller="HeaderController">
+      <div ng-include="'partials/header.html'"></div>
+    </div>
+  </div>
+
+  <div class="weekTitle">
+    <h2>Week 8: Clothes and Colors</h2>
+  </div>
+  
+  <a id="video">
+    <div class="contentBox">
+      <h5>Video</h5>
+      <iframe src="http://player.vimeo.com/video/88385401" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+  </a>
+
+  <a id="lyrics">
+    <div class="contentBox">
+      <h5>Lyrics</h5>
+      <p class="note">(click/hover for ASL)</p>
+      <div class="altText">
+        <div class="shown">
+          <p>and the walls kept tumbling down</p>
+
+          <p>in the city that we love</p>
+
+          <p>gray clouds roll over the hills</p>
+
+          <p>bringing darkness from above</p>
+
+          <p>but if you close your eyes</p>
+
+          <p>does it almost feel like nothing changed at all?</p>
+
+          <p>but if you close your eyes</p>
+
+          <p>does it almost feel like we&rsquo;ve been here before?</p>
+
+          <p>how am I gonna be an optimist about this?</p>
+
+          <p>how am I gonna be an optimist about this? </p>
+        </div>
+        <div class="hidden">
+          <p>WALL WALL FALL FALL FALL FALL</p>
+
+          <p>IN CITY WE LOVE</p>
+
+          <p>THERE CLOUDS COME </p>
+
+          <p>CLOUD {above head} DARK</p>
+
+          <p>BUT IF YOU CLOSE EYES</p>
+
+          <p>DOES IT ALMOST FEEL LIKE NOTHING CHANGE</p>
+
+          <p>BUT IF YOU CLOSE EYES</p>
+
+          <p>DOES IT ALMOST FEEL LIKE WE {PAST} HERE BEFORE</p>
+
+          <p>HOW I THINK POSITIVE ABOUT THIS?</p>
+
+          <p>HOW I THINK POSITIVE ABOUT THESE? </p>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a id="vocab">
+    <div class="contentBox">
+      <h5>Vocab</h5>
+      <div id="show-all" class="button">Show All</div>
+      <div id="vocabList">
+        <p id="clothesOrDressUp">CLOTHES/DRESS UP</p>
+        <p id="butOrDifferent">BUT/ DIFFERENT</p>
+        <p id="faceOrAppearance">FACE/ APPEARANCE</p>
+        <p id="shirt">SHIRT</p>
+        <p id="jacket">JACKET</p>
+        <p id="hair">HAIR</p>
+        <p id="shortHair">SHORT HAIR</p>
+        <p id="longHair">LONG HAIR</p>
+        <p id="eyes">EYES</p>
+        <p id="glasses">GLASSES</p>
+        <p id="pants">PANTS</p>
+        <p id="shorts">SHORTS</p>
+        <p id="shoes">SHOES</p>
+        <p id="beautifulOrHandsomeOrPretty">BEAUTIFUL/ HANDSOME/ PRETTY</p>
+        <p id="cute">CUTE</p>
+        <p id="wash">WASH</p>
+        <p id="clean">CLEAN</p>
+        <p id="costOrPrice">COST</p>
+        <p id="color">COLOR</p>
+        <p id="rainbow">RAINBOW</p>
+        <p id="red">RED</p>
+        <p id="pink">PINK</p>
+        <p id="brown">BROWN</p>
+        <p id="orange">ORANGE</p>
+        <p id="yellow">YELLOW</p>
+        <p id="green">GREEN</p>
+        <p id="blue">BLUE</p>
+        <p id="purple">PURPLE</p>
+        <p id="gray">GRAY</p>
+        <p id="black">BLACK</p>
+        <p id="white">WHITE</p>
+        <p id="clouds">CLOUDS</p>
+        <p id="sun">SUN</p>
+        <p id="light">LIGHT</p>
+        <p id="dark">DARK/ DARKNESS</p>
+        <p id="almost">ALMOST</p>
+        <p id="closeEyes">CLOSE EYES</p>
+        <p id="positive">POSITIVE</p>
+        <p id="optimist">OPTIMIST </p>
+      </div>
+    </div>
+  </a>
+
+  <a id="conversations">
+    <div class="contentBox">
+      <h5>Guess Who Questions</h5>
+        <p class="note">(click/hover for ASL)</p>
+        <div class="altText">
+          <div class="shown">
+            <p>What does he look like?</p>
+
+            <p>What color is his shirt?</p>
+
+            <p>What color is his eyes?</p>
+
+            <p>Is the person male, female?</p>
+
+            <p>How long is their hair?</p>
+
+            <p>Does the person have glasses? </p>
+          </div>
+          <div class="hidden"> 
+            <p>PERSON FACE LIKE WHAT?</p>
+
+            <p>SHIRT COLOR WHAT?</p>
+
+            <p>EYE COLOR WHAT?</p>
+
+            <p>HE {point} MALE {lean right} FEMALE {lean left} WHICH?</p>
+
+            <p>HOW LONG HAIR? SHORT HAIR? LONG HAIR?</p>
+
+            <p>HAVE GLASSES {question}? </p>
+          </div>
+        </div>
+    </div>
+  </a>
+
+</body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47730913-1', 'erikpintar.com');
+  ga('send', 'pageview');
+
+</script>
+
+
+</html>

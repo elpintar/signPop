@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+  <title>Week 5: School</title>
+  <link href="static/reset.css" rel="stylesheet" type="text/css">
+  <script src="static/jquery-1.9.0.js"></script>
+  <script src="static/angular-1.2.26.min.js"></script>
+  <script src="static/week.js"></script>
+  <link href="static/sign.css" rel="stylesheet" type="text/css">
+</head>
+<body ng-app="header">
+  
+  <div class="topBar">
+    <div ng-controller="HeaderController">
+      <div ng-include="'partials/header.html'"></div>
+    </div>
+  </div>
+
+  <div class="weekTitle">
+    <h2>Week 5: School</h2>
+  </div>
+  
+  <a id="video">
+    <div class="contentBox">
+      <h5>Video</h5>
+      <iframe src="http://player.vimeo.com/video/87208871" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+  </a>
+
+  <a id="lyrics">
+    <div class="contentBox">
+      <h5>Lyrics</h5>
+      <p class="note">(click/hover for ASL)</p>
+      <div class="altText">
+        <div class="shown">
+          <p>Pok&eacute;mon!</p>
+
+          <p>gotta catch &lsquo;em all </p>
+
+          <p>I know it's my destiny</p>
+
+          <p>Pok&eacute;mon!</p>
+
+          <p>oh, you're my best friend</p>
+
+          <p>in a world we must defend</p>
+
+          <p>Pok&eacute;mon!</p>
+
+          <p>gotta catch &lsquo;em all</p>
+
+          <p>our courage will pull us through</p>
+
+          <p>you teach me </p>
+
+          <p>and I'll teach you</p>
+
+          <p>Pok&eacute;mon!</p>
+
+          <p>gotta catch 'em all</p>
+
+          <p>gotta catch 'em all</p>
+
+          <p>Pok&eacute;mon! </p>
+        </div>
+        <div class="hidden">
+          <p>POK&Eacute;MON!</p>
+
+          <p>MUST CATCH ALL </p>
+
+          <p>KNOW DESTINY</p>
+
+          <p>POK&Eacute;MON!</p>
+
+          <p>AMAZED, YOU AND ME BEST FRIENDS</p>
+
+          <p>IN WORLD MUST DEFEND</p>
+
+          <p>POK&Eacute;MON!</p>
+
+          <p>MUST CATCH ALL</p>
+
+          <p>OUR COURAGE GUIDE</p>
+
+          <p>YOU TEACH ME</p>
+
+          <p>I WILL TEACH YOU</p>
+
+          <p>POK&Eacute;MON!</p>
+
+          <p>MUST CATCH ALL</p>
+
+          <p>MUST CATCH ALL (2nd way)</p>
+
+          <p>POK&Eacute;MON!</p>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a id="vocab">
+    <div class="contentBox">
+      <h5>Vocab</h5>
+      <div id="show-all" class="button">Show All</div>
+      <div id="vocabList">
+        <p id="which">WHICH</p>
+        <p id="school">SCHOOL</p>
+        <p id="college">COLLEGE</p>
+        <p id="majorOrCareer">MAJOR/CAREER</p>
+        <p id="class">CLASS</p>
+        <p id="have">HAVE</p>
+        <p id="work">WORK</p>
+        <p id="homework">HOMEWORK</p>
+        <p id="due">DUE</p>
+        <p id="goalOrDestiny">GOAL/DESTINY</p>
+        <p id="read">READ</p>
+        <p id="write">WRITE</p>
+        <p id="type">TYPE/CODE</p>
+        <p id="study">STUDY</p>
+        <p id="guide">GUIDE</p>
+        <p id="test">TEST</p>
+        <p id="defend">DEFEND</p>
+        <p id="math">MATH</p>
+        <p id="science">SCIENCE</p>
+        <p id="world">WORLD</p>
+        <p id="engineering">ENGINEERING</p>
+        <p id="art">ART</p>
+        <p id="animal">ANIMAL</p>
+        <p id="all">ALL</p>
+        <p id="all2">ALL [version 2]</p>
+        <p id="computer">COMPUTER</p>
+        <p id="internet">INTERNET</p>
+        <p id="email">EMAIL</p>
+        <p id="hard">HARD</p>
+        <p id="finishOrDone">FINISH/DONE</p>
+        <p id="mustOrNeed">MUST/NEED</p>
+        <p id="freshman,sophomore,junior,senior">FRESHMAN, SOPHOMORE, JUNIOR, SENIOR</p>
+        <p id="amazing">AMAZING</p>
+        <p id="bestFriend">BEST FRIEND</p>
+        <p id="catch">CATCH</p>
+        <p id="catch2">CATCH [version 2]</p>
+        <p id="pokemon">POKEMON </p>
+      </div>
+    </div>
+  </a>
+
+  <a id="conversations">
+    <div class="contentBox">
+      <h5>Small Talk: School Stuff</h5>
+        <p class="note">(click/hover for ASL)</p>
+        <div class="altText">
+          <div class="shown">
+            <p>What&rsquo;s your major?</p>
+
+            <p>What&rsquo;s your favorite class?</p>
+
+            <p>What was your hardest class in all of school?</p>
+
+            <p>How many students does your class have?</p>
+
+            <p>Is the teacher good?  Is the teacher bad?</p>
+
+            <p>Who is your best friend?</p>
+
+            <p>Do you study at home or school?</p>
+
+            <p>How many emails do you have in a day? </p>
+
+          </div>
+          <div class="hidden"> 
+            <p>WHAT YOUR MAJOR WHAT?</p>
+
+            <p>YOUR FAVORITE CLASS WHAT?</p>
+
+            <p>WHAT PAST HARD-EST CLASS ALL SCHOOL WHAT?</p>
+
+            <p>HOW MANY STUDENTS YOUR CLASS HAVE?</p>
+
+            <p>TEACHER GOOD? BAD? (QUESTION)</p>
+
+            <p>YOUR BEST FRIEND WHO?</p>
+
+            <p>YOU STUDY - HOME, SCHOOL - WHICH?</p>
+
+            <p>HOW MANY EMAILS YOU HAVE in day (QUESTION)?</p>
+          </div>
+        </div>
+    </div>
+  </a>
+
+  <a id="video2">
+    <div class="contentBox">
+      <h5>Deaf Culture Video: </br>The History of Deaf Education </br>(in the UK)</h5>
+      <a class="button" href="http://www.bslzone.co.uk/bsl-zone/history-of-deaf-education/history-deaf-education-1/?subs=subs">Go To Video</a>
+    </div>
+  </a>
+
+</body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47730913-1', 'erikpintar.com');
+  ga('send', 'pageview');
+
+</script>
+
+
+</html>
