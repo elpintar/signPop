@@ -863,10 +863,10 @@ gifObj = {
 		diff: "E",
 		alt: [["week", "end"]]
 	},
-	"length": {
+	"ready": {
 		week: 4,
 		diff: "E",
-		alt: ["long"]
+		alt: ["set"]
 	},
 	
 
