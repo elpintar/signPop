@@ -932,7 +932,8 @@ gifObj = {
 	"type": {
 		week: 5,
 		diff: "M",
-		alt: []
+		alt: [["cod"],
+					["program"]]
 	},
 	"guide": {
 		week: 5,
@@ -1690,162 +1691,343 @@ gifObj = {
 					["shut", "eye"]]
 	},
 
-	// week 9 - food
+	// week 9 - Animals and Nature
+
+	"cat": {
+		week: 9,
+		difficulty: "H",
+		alt: []
+	},
+	"bird": {
+		week: 9,
+		difficulty: "H",
+		alt: ["sparrow",
+					"parrot"]
+	},
+	"fish": {
+		week: 9,
+		difficulty: "H",
+		alt: []
+	},
+	"horse": {
+		week: 9,
+		difficulty: "H",
+		alt: []
+	},
+	"cow": {
+		week: 9,
+		difficulty: "H",
+		alt: []
+	},
+	"pig": {
+		week: 9,
+		difficulty: "H",
+		alt: []
+	},
+	"bug": {
+		week: 9,
+		difficulty: "H",
+		alt: ["insect"]
+	},
+	"spider": {
+		week: 9,
+		difficulty: "H",
+		alt: []
+	},
+	"turtle": {
+		week: 9,
+		difficulty: "H",
+		alt: []
+	},
+	"squirrel": {
+		week: 9,
+		difficulty: "H",
+		alt: ["chipmunk"]
+	},
+	"sky": {
+		week: 9,
+		difficulty: "H",
+		alt: ["heaven"]
+	},
+	"moon": {
+		week: 9,
+		difficulty: "H",
+		alt: []
+	},
+	"stars": {
+		week: 9,
+		difficulty: "H",
+		alt: ["star"]
+	},
+	"river": {
+		week: 9,
+		difficulty: "H",
+		alt: []
+	},
+	"tree": {
+		week: 9,
+		difficulty: "H",
+		alt: []
+	},
+	"forest": {
+		week: 9,
+		difficulty: "H",
+		alt: ["woods",
+					"trees"]
+	},
+	"hot": {
+		week: 9,
+		difficulty: "H",
+		alt: ["heat"]
+	},
+	"cold": {
+		week: 9,
+		difficulty: "H",
+		alt: []
+	},
+	"weather": {
+		week: 9,
+		difficulty: "H",
+		alt: []
+	},
+	"rain": {
+		week: 9,
+		difficulty: "H",
+		alt: []
+	},
+	"snow": {
+		week: 9,
+		difficulty: "H",
+		alt: []
+	},
+	"lightning": {
+		week: 9,
+		difficulty: "H",
+		alt: []
+	},
+	"thunder" : {
+		week: 9,
+		difficulty: "H",
+		alt: ["sound",
+					"loud"]
+	},
+	"sound": {
+		week: 9,
+		difficulty: "H",
+		alt: ["noise",
+					"loud"]
+	},
+	"storm": {
+		week: 9,
+		difficulty: "H",
+		alt: []
+	},
+	"fire": {
+		week: 9,
+		difficulty: "H",
+		alt: ["burn",
+					"boil"]
+	},
+	"strength": {
+		week: 9,
+		difficulty: "H",
+		alt: ["strong",
+					"might"]
+	},
+	"force": {
+		week: 9,
+		difficulty: "H",
+		alt: []
+	},
+	"clear": {
+		week: 9,
+		difficulty: "H",
+		alt: ["bright",
+					"obvious"]
+	},
+	"mystery": {
+		week: 9,
+		difficulty: "H",
+		alt: ["mysterious"]
+	},
+	"side": {
+		week: 9,
+		difficulty: "H",
+		alt: ["wall"]
+	},
+	"fast": {
+		week: 9,
+		difficulty: "H",
+		alt: ["quick",
+					"swift",
+					"speed"]
+	},
+	"be": {
+		week: 9,
+		difficulty: "H",
+		alt: []
+	},
+
+
+	// week 10 - food
 
 	"food": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: ["food / eat", 
 					"eat"]
 	},
 	"whatKind": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: ["what-kind",
 					["what","kind"],
 					"kind"]
 	},
 	"meal": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: ["feast",
 					"devour"]
 	},
 	"drink": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: ["sip"]
 	},
 	"delicious": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
-		alt: ["tasty"]
+		alt: ["tasty",
+					"yummy"]
 	},
 	"hungry": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: ["hunger",
 					"wish"]
 	},
 	"full": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: ["filled",
 					"fed up"]
 	},
 	"thirsty": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: ["thirst"]
 	},
 	"more": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: []
 	},
 	"some": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: ["part",
 					"piece"]
 	},
 	"water": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: []
 	},
 	"soda": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: ["pop"]
 	},
 	"milk": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: []
 	},
 	"cereal": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: ["soup"]
 	},
 	"pizza": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: ["zz"]
 	},
 	"popcorn": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: []
 	},
 	"cheese": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: []
 	},
 	"chicken": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: []
 	},
 	"noodle": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: ["pasta"]
 	},
 	"egg": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: []
 	},
 	"apple": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: ["cool"]
 	},
 	"candy": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: []
 	},
 	"pie": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: []
 	},
 	"cook": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: []
 	},
 	"fry": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: []
 	},
 	"whisk": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
-		alt: ["beat"]
+		alt: ["beat","stir"]
 	},
 	"boil": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
-		alt: ["fire"]
+		alt: ["fire",
+					"burn"]
 	},
 	"myself": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: ["self"]
 	},
 	"yourself": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
-		alt: []
+		alt: [["good", "job"],
+					["thumbs", "up"]]
 	},
 	"get": {
-		week: 9,
+		week: 10,
 		difficulty: "H",
 		alt: ["grab"]
 	}

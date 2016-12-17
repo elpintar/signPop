@@ -413,13 +413,13 @@ app.controller("GameController", function($scope) {
 			this.missedWordQueue = [];
 			this.missedWordMode = false;
 		}
-		this.weeks = [1,2,3,4,5,6,7,8];
+		this.weeks = [1,2,3,4,5,6,7,8,9,10];
 		this.checked = this.weeks.map(function(){return false});
 		this.checked.push(false); // for 0 index
 		//this.checked.push(false); // for 8 index
 		this.weekNames = ["","ABCs & 123s", "Greetings",
 			"Conversation", "Time", "School", "Places", "Family",
-			"Clothes & Colors", "Food", "Animals & Nature"];
+			"Clothes & Colors", "Animals & Nature", "Food"];
 		// check if it's the midterm page!
 		var path = window.location.pathname;
 		var page = path.split("/").pop();

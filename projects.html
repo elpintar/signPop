@@ -6,9 +6,10 @@
   <script src="static/jquery-1.9.0.js"></script>
   <script src="static/angular-1.2.26.min.js"></script>
   <script src="static/week.js"></script>
+  <script src="static/projects.js"></script>
   <link href="static/sign.css" rel="stylesheet" type="text/css">
 </head>
-<body ng-app="header">
+<body ng-app="projectsPage">
   
   <div class="topBar">
     <div ng-controller="HeaderController">
@@ -16,372 +17,572 @@
     </div>
   </div>
 
-  <div class="weekTitle">
-    <h2 class="lessMargBot">Project Showcase</h2>
+  <div id="projects-container" ng-controller="ProjectsController">
+
+    <div>
+      <div class="weekTitle">
+        <h2 class="lessMargBot">Project Showcase</h2>
+      </div>
+      <br>
+    </div>
+
+    <br>
+    <br>
+
+    <div ng-click="s16show=!s16show;" class="weekTitle">
+      <h2>Projects</h2>
+      <h3>Spring 2016</h3>
+    </div>
+
+    <br>
+
+    <div ng-show="s16show" class="project-semester-container">
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>One Day More - Les Miserables</h5>
+          <p class="note">Christine, Shannon, & Audrey</p>
+          <div onclick="play_1vftlXkn6AY();" id="vidwrap-1vftlXkn6AY" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/1vftlXkn6AY/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_1vftlXkn6AY(){document.getElementById('vidwrap-1vftlXkn6AY').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/1vftlXkn6AY?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+
+        <div class="contentBox">
+          <h5>Where Is The Love - Black Eyed Peas</h5>
+          <p class="note">Ghalya, Miranda & Feyi</p>
+          <div onclick="play_MuDvIEBMcLE();" id="vidwrap-MuDvIEBMcLE" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/MuDvIEBMcLE/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_MuDvIEBMcLE(){document.getElementById('vidwrap-MuDvIEBMcLE').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/MuDvIEBMcLE?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+
+        <div class="contentBox">
+          <h5>Little Talks - Of Monsters and Men</h5>
+          <p class="note">Catherine and Walter</p>
+          <div onclick="play_YFffD1iCu_0();" id="vidwrap-YFffD1iCu_0" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/YFffD1iCu_0/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_YFffD1iCu_0(){document.getElementById('vidwrap-YFffD1iCu_0').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/YFffD1iCu_0?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+
+        <div class="contentBox">
+          <h5>Skinny Love - Bon Iver</h5>
+          <p class="note">Josh</p>
+          <div onclick="play_h8LeVJ2EE84();" id="vidwrap-h8LeVJ2EE84" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/h8LeVJ2EE84/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_h8LeVJ2EE84(){document.getElementById('vidwrap-h8LeVJ2EE84').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/h8LeVJ2EE84?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+
+        <div class="contentBox">
+          <h5>Viva La Vida - Coldplay</h5>
+          <p class="note">Lexi & Caitlin</p>
+          <div onclick="play_Zj4PN7LusBU();" id="vidwrap-Zj4PN7LusBU" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/Zj4PN7LusBU/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_Zj4PN7LusBU(){document.getElementById('vidwrap-Zj4PN7LusBU').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/Zj4PN7LusBU?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+
+        <div class="contentBox">
+          <h5>Bet on It - High School Musical</h5>
+          <p class="note">Margaret & Alicia</p>
+          <div onclick="play_EoI61QnIfjk();" id="vidwrap-EoI61QnIfjk" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/EoI61QnIfjk/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_EoI61QnIfjk(){document.getElementById('vidwrap-EoI61QnIfjk').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/EoI61QnIfjk?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+
+        <div class="contentBox">
+          <h5>Burn - Hamilton</h5>
+          <p class="note">Bobbie</p>
+          <div onclick="play_J7Kbw8O6u0M();" id="vidwrap-J7Kbw8O6u0M" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/J7Kbw8O6u0M/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_J7Kbw8O6u0M(){document.getElementById('vidwrap-J7Kbw8O6u0M').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/J7Kbw8O6u0M?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+
+        <div class="contentBox">
+          <h5>Quiet Uptown - Hamilton</h5>
+          <p class="note">Becky & Jiwon</p>
+          <div onclick="play_FLJ_RMIBbUE();" id="vidwrap-FLJ_RMIBbUE" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/FLJ_RMIBbUE/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_FLJ_RMIBbUE(){document.getElementById('vidwrap-FLJ_RMIBbUE').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/FLJ_RMIBbUE?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+
+        <div class="contentBox">
+          <h5>X.O. - Beyonc&eacute;</h5>
+          <p class="note">Jon, Simran, Summer & Emma</p>
+          <div onclick="play_fNrCl3LuM();" id="vidwrap-fNrCl3LuM-c" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/fNrCl3LuM-c/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_fNrCl3LuM(){document.getElementById('vidwrap-fNrCl3LuM-c').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/fNrCl3LuM-c?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+
+        <div class="contentBox">
+          <h5>Love Don't Die - The Fray</h5>
+          <p class="note">Alan, Alisa, & Harika</p>
+          <div onclick="play_vIWc5bIsXzY();" id="vidwrap-vIWc5bIsXzY" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/vIWc5bIsXzY/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_vIWc5bIsXzY(){document.getElementById('vidwrap-vIWc5bIsXzY').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/vIWc5bIsXzY?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+
+        <div class="contentBox">
+          <h5>Gone, Gone, Gone - Phillip Phillips</h5>
+          <p class="note">Mounir & Dalia</p>
+          <div onclick="play_aqA3VThHz9w();" id="vidwrap-aqA3VThHz9w" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/aqA3VThHz9w/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_aqA3VThHz9w(){document.getElementById('vidwrap-aqA3VThHz9w').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/aqA3VThHz9w?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+
+        <div class="contentBox">
+          <h5>Love is an Open Door - Frozen</h5>
+          <p class="note">Kim & David</p>
+          <div onclick="play_Vz0mWD3rzHc();" id="vidwrap-Vz0mWD3rzHc" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/Vz0mWD3rzHc/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_Vz0mWD3rzHc(){document.getElementById('vidwrap-Vz0mWD3rzHc').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/Vz0mWD3rzHc?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+
+        <div class="contentBox">
+          <h5>Tonight - West Side Story</h5>
+          <p class="note">Simone & Ismael</p>
+          <div onclick="play_kH6RVCMmunE();" id="vidwrap-kH6RVCMmunE" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/kH6RVCMmunE/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_kH6RVCMmunE(){document.getElementById('vidwrap-kH6RVCMmunE').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/kH6RVCMmunE?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+
+        <div class="contentBox">
+          <h5>Falling In Love In A Coffee Shop - Landon Pigg </h5>
+          <p class="note">Vaasavi & Stephanie</p>
+          <div onclick="play_NTitMo7yNIA();" id="vidwrap-NTitMo7yNIA" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/NTitMo7yNIA/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_NTitMo7yNIA(){document.getElementById('vidwrap-NTitMo7yNIA').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/NTitMo7yNIA?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+
+        <div class="contentBox">
+          <h5>It's A Beautiful Day - Michael Buble</h5>
+          <p class="note">Anagha</p>
+          <div onclick="play_ARIqHjVNPlo();" id="vidwrap-ARIqHjVNPlo" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/ARIqHjVNPlo/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_ARIqHjVNPlo(){document.getElementById('vidwrap-ARIqHjVNPlo').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/ARIqHjVNPlo?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+
+        <div class="contentBox">
+          <h5>I Love It - Icona Pop</h5>
+          <p class="note">Lucy</p>
+          <div onclick="play_2Scg5WrLlXs();" id="vidwrap-2Scg5WrLlXs" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/2Scg5WrLlXs/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_2Scg5WrLlXs(){document.getElementById('vidwrap-2Scg5WrLlXs').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/2Scg5WrLlXs?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+
+        <div class="contentBox">
+          <h5>Beautiful Day - U2</h5>
+          <p class="note">Madison</p>
+          <div onclick="play_RrfLJNTdTs0();" id="vidwrap-RrfLJNTdTs0" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/RrfLJNTdTs0/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_RrfLJNTdTs0(){document.getElementById('vidwrap-RrfLJNTdTs0').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/RrfLJNTdTs0?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+
+        <div class="contentBox">
+          <h5>Sweater Weather - The Neighborhood</h5>
+          <p class="note">Stephanie</p>
+          <div onclick="play_sDN46oD42pE();" id="vidwrap-sDN46oD42pE" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/sDN46oD42pE/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_sDN46oD42pE(){document.getElementById('vidwrap-sDN46oD42pE').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/sDN46oD42pE?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+
+        <div class="contentBox">
+          <h5>Rather Be - Clean Bandit</h5>
+          <p class="note">Arjun & Kirn</p>
+          <div onclick="play_pYlPr1gIvh8();" id="vidwrap-pYlPr1gIvh8" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/pYlPr1gIvh8/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_pYlPr1gIvh8(){document.getElementById('vidwrap-pYlPr1gIvh8').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/pYlPr1gIvh8?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+
+        <div class="contentBox">
+          <h5>Don't Worry Be Happy - Bobby McFerrin</h5>
+          <p class="note">Tala</p>
+          <div onclick="play_YlGNYKGrro4();" id="vidwrap-YlGNYKGrro4" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/YlGNYKGrro4/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_YlGNYKGrro4(){document.getElementById('vidwrap-YlGNYKGrro4').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/YlGNYKGrro4?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+
+        <div class="contentBox">
+          <h5>Rock n' Roll Suicide - David Bowie</h5>
+          <p class="note">Ismael</p>
+          <div onclick="play_rocknrollsuicide();" id="vidwrap-rocknrollsuicide" style="height:365px;width:650px;background: black url('https://storage.googleapis.com/blog.erikpintar.com/imgs/rocknrollsuicide.png') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_rocknrollsuicide(){document.getElementById('vidwrap-rocknrollsuicide').innerHTML = '<iframe width="650" height="365" src="http://player.vimeo.com/video/163774961?autoplay=true" frameborder="0"></iframe>';}</script>
+        </div>
+
+        <div class="contentBox">
+          <h5>Start of Something New - High School Musical</h5>
+          <p class="note">Tushar & Katherine</p>
+          <div onclick="play_nAmRqgHZOvE();" id="vidwrap-nAmRqgHZOvE" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/nAmRqgHZOvE/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_nAmRqgHZOvE(){document.getElementById('vidwrap-nAmRqgHZOvE').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/nAmRqgHZOvE?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+      
+    </div>
+
+    <br>
+
+    <div ng-click="f15show=!f15show;" class="weekTitle">
+      <h2>Projects</h2>
+      <h3>Fall 2015</h3>
+    </div>
+
+    <br>
+
+    <div ng-show="f15show" class="project-semester-container">
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>No Scrubs - TLC</h5>
+          <p class="note">Yaminah and Muna</p>
+          <div onclick="play_2rINoEUjtFc();" id="vidwrap-2rINoEUjtFc" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/2rINoEUjtFc/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_2rINoEUjtFc(){document.getElementById('vidwrap-2rINoEUjtFc').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/2rINoEUjtFc?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Home - Edward Sharpe</h5>
+          <p class="note">J.P. (and Madeline!)</p>
+          <div onclick="play_a2k47l2_Fmo();" id="vidwrap-a2k47l2_Fmo" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/a2k47l2_Fmo/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_a2k47l2_Fmo(){document.getElementById('vidwrap-a2k47l2_Fmo').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/a2k47l2_Fmo?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Sunday Morning - Maroon 5</h5>
+          <p class="note">(cover by Joshua Hong and Woozi of 17)</p>
+          <p class="note">Lauren</p>
+          <div onclick="play_hQZuiP9uQeM();" id="vidwrap-hQZuiP9uQeM" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/hQZuiP9uQeM/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_hQZuiP9uQeM(){document.getElementById('vidwrap-hQZuiP9uQeM').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/hQZuiP9uQeM?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>What Dreams are Made Of - Lizzy McGuire</h5>
+          <p class="note">Gaby and Ruby</p>
+          <div onclick="play_Q_6zsFtgSYA();" id="vidwrap-Q_6zsFtgSYA" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/Q_6zsFtgSYA/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_Q_6zsFtgSYA(){document.getElementById('vidwrap-Q_6zsFtgSYA').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/Q_6zsFtgSYA?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>You and I - Ingrid Michaelson</h5>
+          <p class="note">Stephanie</p>
+          <div onclick="play_v24wHlo_YI4();" id="vidwrap-v24wHlo-YI4" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/v24wHlo-YI4/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_v24wHlo_YI4(){document.getElementById('vidwrap-v24wHlo-YI4').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/v24wHlo-YI4?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Hotline Bling - Drake</h5>
+          <p class="note">Tushar and Katherine</p>
+          <div onclick="play_gnW29bjRLBY();" id="vidwrap-gnW29bjRLBY" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/gnW29bjRLBY/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_gnW29bjRLBY(){document.getElementById('vidwrap-gnW29bjRLBY').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/gnW29bjRLBY?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>I Just Can't Wait to be King - The Lion King</h5>
+          <p class="note">Maggie and Maria</p>
+          <div onclick="play_rLLkfhRlWWk();" id="vidwrap-rLLkfhRlWWk" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/rLLkfhRlWWk/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_rLLkfhRlWWk(){document.getElementById('vidwrap-rLLkfhRlWWk').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/rLLkfhRlWWk?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Yellow - Coldplay</h5>
+          <p class="note">Ivan</p>
+          <div onclick="play_qQlhwI8NMqg();" id="vidwrap-qQlhwI8NMqg" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/qQlhwI8NMqg/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_qQlhwI8NMqg(){document.getElementById('vidwrap-qQlhwI8NMqg').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/qQlhwI8NMqg?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Bohemian Rhapsody - Queen</h5>
+          <p class="note">Sonia</p>
+          <div onclick="play__MoCvhOhhcY();" id="vidwrap-_MoCvhOhhcY" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/_MoCvhOhhcY/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play__MoCvhOhhcY(){document.getElementById('vidwrap-_MoCvhOhhcY').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/_MoCvhOhhcY?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Part of Your World - Little Mermaid</h5>
+          <p class="note">Sarah</p>
+          <div onclick="play_6JLJSNPlhsE();" id="vidwrap-6JLJSNPlhsE" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/6JLJSNPlhsE/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_6JLJSNPlhsE(){document.getElementById('vidwrap-6JLJSNPlhsE').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/6JLJSNPlhsE?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>For The First Time - Boyce Avenue</h5>
+          <p class="note">Jake</p>
+          <div onclick="play_4LTaDN807nQ();" id="vidwrap-4LTaDN807nQ" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/4LTaDN807nQ/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_4LTaDN807nQ(){document.getElementById('vidwrap-4LTaDN807nQ').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/4LTaDN807nQ?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Ain't no Rest for the Wicked - Cage the Elephant</h5>
+          <p class="note">Kerrian and Ashley</p>
+          <div onclick="play_hjsp8za7();" id="vidwrap-hjsp8za7-zE" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/hjsp8za7-zE/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_hjsp8za7(){document.getElementById('vidwrap-hjsp8za7-zE').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/hjsp8za7-zE?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Beautiful Drug - Zac Brown Band</h5>
+          <p class="note">Leah</p>
+          <div onclick="play_9UpbLU7Se90();" id="vidwrap-9UpbLU7Se90" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/9UpbLU7Se90/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_9UpbLU7Se90(){document.getElementById('vidwrap-9UpbLU7Se90').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/9UpbLU7Se90?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <br>
+
+      <br>
+
+    </div>
+
+    <br>
+    <br>
+    
+    <div ng-click="s15show=!s15show;" class="weekTitle">
+      <h2>Projects</h2>
+      <h3>Spring 2015</h3>
+    </div>
+
+    <br>
+
+    <div ng-show="s15show" class="project-semester-container">
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Alas I Cannot Swim - Laura Marling</h5>
+          <p class="note">Estelle</p>
+          <div onclick="play_qdOvHKIv8Do();" id="vidwrap-qdOvHKIv8Do" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/qdOvHKIv8Do/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_qdOvHKIv8Do(){document.getElementById('vidwrap-qdOvHKIv8Do').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/qdOvHKIv8Do?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Cups - Anna Kendrick</h5>
+          <p class="note">Yitian</p>
+          <div onclick="play_gtJTGTmYK0U();" id="vidwrap-gtJTGTmYK0U" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/gtJTGTmYK0U/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_gtJTGTmYK0U(){document.getElementById('vidwrap-gtJTGTmYK0U').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/gtJTGTmYK0U?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Daylight - Maroon 5</h5>
+          <p class="note">Jing</p>
+          <div onclick="play_8X7vqq1nLYY();" id="vidwrap-8X7vqq1nLYY" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/8X7vqq1nLYY/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_8X7vqq1nLYY(){document.getElementById('vidwrap-8X7vqq1nLYY').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/8X7vqq1nLYY?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Good To Be Alive - Jason Gray</h5>
+          <p class="note">Jenny</p>
+          <div onclick="play_o0EaToGsJl4();" id="vidwrap-o0EaToGsJl4" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/o0EaToGsJl4/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_o0EaToGsJl4(){document.getElementById('vidwrap-o0EaToGsJl4').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/o0EaToGsJl4?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Wannabe - Spice Girls</h5>
+          <p class="note">Gwen and Puj</p>
+          <div onclick="play_d_ilwnH1euw();" id="vidwrap-d_ilwnH1euw" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/d_ilwnH1euw/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_d_ilwnH1euw(){document.getElementById('vidwrap-d_ilwnH1euw').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/d_ilwnH1euw?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Immortals - Fall Out Boy</h5>
+          <p class="note">Toya</p>
+          <div onclick="play_32n6gXvVRR0();" id="vidwrap-32n6gXvVRR0" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/32n6gXvVRR0/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_32n6gXvVRR0(){document.getElementById('vidwrap-32n6gXvVRR0').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/32n6gXvVRR0?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>I Choose You - Sara Bareilles</h5>
+          <p class="note">Lucy and Lexi</p>
+          <div onclick="play_C91ql7bxxdg();" id="vidwrap-C91ql7bxxdg" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/C91ql7bxxdg/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_C91ql7bxxdg(){document.getElementById('vidwrap-C91ql7bxxdg').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/C91ql7bxxdg?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Everything's Alright - from "To The Moon"</h5>
+          <p class="note">Vincent</p>
+          <div onclick="play_Q6P1zBKPD5E();" id="vidwrap-Q6P1zBKPD5E" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/Q6P1zBKPD5E/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_Q6P1zBKPD5E(){document.getElementById('vidwrap-Q6P1zBKPD5E').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/Q6P1zBKPD5E?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Reason - Hoobastank</h5>
+          <p class="note">Niki</p>
+          <div onclick="play_hPrmC2XDRds();" id="vidwrap-hPrmC2XDRds" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/hPrmC2XDRds/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_hPrmC2XDRds(){document.getElementById('vidwrap-hPrmC2XDRds').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/hPrmC2XDRds?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Everything Is Awesome - from "The Lego Movie"</h5>
+          <p class="note">Lucy</p>
+          <div onclick="play_JBtVZU2();" id="vidwrap-JBtVZU2-ak8" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/JBtVZU2-ak8/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_JBtVZU2(){document.getElementById('vidwrap-JBtVZU2-ak8').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/JBtVZU2-ak8?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <br>
+
+    </div>
+
+    <br>
+
+    <div ng-click="f14show=!f14show;" class="weekTitle">
+      <h2>Projects</h2>
+      <h3>Fall 2014</h3>
+    </div>
+
+    <br>  
+
+    <div ng-show="f14show" class="project-semester-container">
+
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Shake It Off - Taylor Swift</h5>
+          <p class="note">Rachel and Sage</p>
+          <div onclick="play_EGmMcth5ys4();" id="vidwrap-EGmMcth5ys4" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/EGmMcth5ys4/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_EGmMcth5ys4(){document.getElementById('vidwrap-EGmMcth5ys4').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/EGmMcth5ys4?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>The Wizard and I - from "Wicked"</h5>
+          <p class="note">Chris</p>
+          <div onclick="play_wizandI();" id="vidwrap-wizandI" style="height:365px;width:650px;background: black url('https://i.vimeocdn.com/video/500501139.webp?mw=960&mh=986') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_wizandI(){document.getElementById('vidwrap-wizandI').innerHTML = '<iframe width="650" height="365" src="http://player.vimeo.com/video/114686853?autoplay=true" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Sk8r Boy - originally by Avril Lavigne</h5>
+          <p class="note">(motown tribute by ScottBradleeLovesYa)</p>
+          <p class="note">Amalia</p>
+          <div onclick="play_xz1ZHygugOA();" id="vidwrap-xz1ZHygugOA" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi/xz1ZHygugOA/maxresdefault.jpg') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_xz1ZHygugOA(){document.getElementById('vidwrap-xz1ZHygugOA').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/xz1ZHygugOA?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>A Thousand Miles - Vanessa Carlton</h5>
+          <p class="note">Wei</p>
+          <div onclick="play_tAEZpJhNyuo();" id="vidwrap-tAEZpJhNyuo" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/tAEZpJhNyuo/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_tAEZpJhNyuo(){document.getElementById('vidwrap-tAEZpJhNyuo').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/tAEZpJhNyuo?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Oceans - Hillsong</h5>
+          <p class="note">Yuyang</p>
+          <div onclick="play_XqTBKspoBaU();" id="vidwrap-XqTBKspoBaU" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/XqTBKspoBaU/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_XqTBKspoBaU(){document.getElementById('vidwrap-XqTBKspoBaU').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/XqTBKspoBaU?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Lost Stars - from "Begin Again"</h5>
+          <p class="note">Rhucha And Alexis</p>
+          <div onclick="play_lostStars();" id="vidwrap-lostStars" style="height:365px;width:650px;background: black url('https://i.vimeocdn.com/video/498242278.webp?mw=960&mh=986') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_lostStars(){document.getElementById('vidwrap-lostStars').innerHTML = '<iframe width="650" height="365" src="http://player.vimeo.com/video/113051958?autoplay=true" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+      
+      <a id="video">
+        <div class="contentBox">
+          <h5>Primadonna Girl - Marina and the Diamonds</h5>
+          <p class="note">Sonia and Christina</p>
+          <div onclick="play_primadonna();" id="vidwrap-primadonna" style="height:365px;width:650px;background: black url('https://i.vimeocdn.com/video/498258405.webp?mw=960&mh=986') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_primadonna(){document.getElementById('vidwrap-primadonna').innerHTML = '<iframe width="650" height="365" src="http://player.vimeo.com/video/113055001?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>We're Going To Be Friends - The White Stripes</h5>
+          <p class="note">Kate and Kyle</p>
+          <div onclick="play_WesmuN74EQA();" id="vidwrap-WesmuN74EQA" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/WesmuN74EQA/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_WesmuN74EQA(){document.getElementById('vidwrap-WesmuN74EQA').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/WesmuN74EQA?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>You'll Be In My Heart - from "Tarzan"</h5>
+          <p class="note">Angela</p>
+          <div onclick="play__Q4xENse2So();" id="vidwrap-_Q4xENse2So" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/_Q4xENse2So/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play__Q4xENse2So(){document.getElementById('vidwrap-_Q4xENse2So').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/_Q4xENse2So?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Home - Phillip Phillips</h5>
+          <p class="note">Jackie and Jeremy</p>
+          <div onclick="play__F_Z_lxWo0Y();" id="vidwrap-_F_Z_lxWo0Y" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/_F_Z_lxWo0Y/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play__F_Z_lxWo0Y(){document.getElementById('vidwrap-_F_Z_lxWo0Y').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/_F_Z_lxWo0Y?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+    </div>
+
+    <br>
+
+    <div ng-click="s14show=!s14show;" class="weekTitle">
+      <h2>Projects</h2>
+      <h3>Spring 2014</h3>
+    </div>
+
+    <br>
+
+    <div ng-show="s14show" class="project-semester-container">
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Summer Nights - from "Grease"</h5>
+          <p class="note">Deanna, Caitlyn, and Matthew</p>
+          <div onclick="play_summerNights();" id="vidwrap-summerNights" style="height:365px;width:650px;background: black url('https://i.vimeocdn.com/video/473153105.webp?mw=960&mh=578') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_summerNights(){document.getElementById('vidwrap-summerNights').innerHTML = '<iframe width="650" height="365" src="http://player.vimeo.com/video/93169727?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+      
+      <a id="video">
+        <div class="contentBox">
+          <h5>A Whole New World - from "Aladdin"</h5>
+          <p class="note">Vivek and Michelle</p>
+          <div onclick="play_wholeNewWorld();" id="vidwrap-to-vphsbQvU" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi/to-vphsbQvU/maxresdefault.jpg') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_wholeNewWorld(){document.getElementById('vidwrap-to-vphsbQvU').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/to-vphsbQvU?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Let It Go - from "Frozen"</h5>
+          <p class="note">Maddison</p>
+          <div onclick="play_LetItGo1();" id="vidwrap-LetItGo1" style="height:365px;width:650px;background: black url('https://i.vimeocdn.com/video/473213965.webp?mw=960&mh=578') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_LetItGo1(){document.getElementById('vidwrap-LetItGo1').innerHTML = '<iframe width="650" height="365" src="http://player.vimeo.com/video/93046295?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Happy - Pharrell Williams</h5>
+          <p class="note">Nina and Anum</p>
+          <div onclick="play_happy();" id="vidwrap-happy" style="height:365px;width:650px;background: black url('https://i.vimeocdn.com/video/472985985.webp?mw=960&mh=578') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_happy(){document.getElementById('vidwrap-happy').innerHTML = '<iframe width="650" height="365" src="http://player.vimeo.com/video/93049669?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Fix You - Coldplay</h5>
+          <p class="note">Kavin and Paul</p>
+          <div onclick="play_qITz9OSI47U();" id="vidwrap-qITz9OSI47U" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi/qITz9OSI47U/maxresdefault.jpg') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_qITz9OSI47U(){document.getElementById('vidwrap-qITz9OSI47U').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/qITz9OSI47U?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Let It Go (full length)</h5>
+          <p class="note">Mari</p>
+          <div onclick="play_letItGo2();" id="vidwrap-letItGo2" style="height:365px;width:650px;background: black url('https://i.vimeocdn.com/video/472986035.webp?mw=960&mh=578') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_letItGo2(){document.getElementById('vidwrap-letItGo2').innerHTML = '<iframe width="650" height="365" src="http://player.vimeo.com/video/93049670?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>You're So Great - Blur</h5>
+          <p class="note">Annabelle</p>
+          <div onclick="play_youreSoGreat();" id="vidwrap-youreSoGreat" style="height:365px;width:650px;background: black url('https://i.vimeocdn.com/video/473153385.webp?mw=960&mh=578') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_youreSoGreat(){document.getElementById('vidwrap-youreSoGreat').innerHTML = '<iframe width="650" height="365" src="http://player.vimeo.com/video/93169726?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a id="video">
+        <div class="contentBox">
+          <h5>Thriller - Michael Jackson</h5>
+          <p class="note">Michael and Gordon</p>
+          <div onclick="play_thriller();" id="vidwrap-thriller" style="height:365px;width:650px;background: black url('https://i.vimeocdn.com/video/473644167.webp?mw=960&mh=578') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;"></div><script type="text/javascript">function play_thriller(){document.getElementById('vidwrap-thriller').innerHTML = '<iframe width="650" height="365" src="http://player.vimeo.com/video/93564583?autoplay=1&color=white" frameborder="0"></iframe>';}</script>
+        </div>
+      </a>
+
+      <a class="button" href="./bonus.html">and Bonus Videos!</a>
+    </div>
+
   </div>
 
   <br>
-
-  <div class="weekTitle">
-    <h2>Projects</h2>
-    <h3>Fall 2015</h3>
-  </div>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>No Scrubs - TLC</h5>
-      <p class="note">Yaminah and Muna</p>
-      <iframe src="http://www.youtube.com/embed/2rINoEUjtFc" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Home - Edward Sharpe</h5>
-      <p class="note">J.P. (and Madeline!)</p>
-      <iframe src="http://www.youtube.com/embed/a2k47l2_Fmo" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Sunday Morning - Maroon 5</h5>
-      <p class="note">(cover by Joshua Hong and Woozi of 17)</p>
-      <p class="note">Lauren</p>
-      <iframe src="http://www.youtube.com/embed/hQZuiP9uQeM" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>What Dreams are Made Of - Lizzy McGuire</h5>
-      <p class="note">Gaby and Ruby</p>
-      <iframe src="http://www.youtube.com/embed/Q_6zsFtgSYA" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>You and I - Ingrid Michaelson</h5>
-      <p class="note">Stephanie</p>
-      <iframe src="http://www.youtube.com/embed/v24wHlo-YI4" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Hotline Bling - Drake</h5>
-      <p class="note">Tushar and Katherine</p>
-      <iframe src="http://www.youtube.com/embed/gnW29bjRLBY" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>I Just Can't Wait to be King - The Lion King</h5>
-      <p class="note">Maggie and Maria</p>
-      <iframe src="http://www.youtube.com/embed/rLLkfhRlWWk" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Yellow - Coldplay</h5>
-      <p class="note">Ivan</p>
-      <iframe src="http://www.youtube.com/embed/qQlhwI8NMqg" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Bohemian Rhapsody - Queen</h5>
-      <p class="note">Sonia</p>
-      <iframe src="http://www.youtube.com/embed/_MoCvhOhhcY" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Part of Your World - Little Mermaid</h5>
-      <p class="note">Sarah</p>
-      <iframe src="http://www.youtube.com/embed/6JLJSNPlhsE" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>For The First Time - Boyce Avenue</h5>
-      <p class="note">Jake</p>
-      <iframe src="http://www.youtube.com/embed/4LTaDN807nQ" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Ain't no Rest for the Wicked - Cage the Elephant</h5>
-      <p class="note">Kerrian and Ashley</p>
-      <iframe src="http://www.youtube.com/embed/hjsp8za7-zE" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Beautiful Drug - Zac Brown Band</h5>
-      <p class="note">Leah</p>
-      <iframe src="http://www.youtube.com/embed/9UpbLU7Se90" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <br>
-
-  <a class="button" href="./bonus.html">and Bonus Videos from Erik!</a>
-
   <br>
   <br>
-
-  <div class="weekTitle">
-    <h2>Projects</h2>
-    <h3>Spring 2015</h3>
-  </div>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Alas I Cannot Swim - Laura Marling</h5>
-      <p class="note">Estelle</p>
-      <iframe src="http://www.youtube.com/embed/qdOvHKIv8Do" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Cups - Anna Kendrick</h5>
-      <p class="note">Yitian</p>
-      <iframe src="http://www.youtube.com/embed/gtJTGTmYK0U" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Daylight - Maroon 5</h5>
-      <p class="note">Jing</p>
-      <iframe src="http://www.youtube.com/embed/8X7vqq1nLYY" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Good To Be Alive - Jason Gray</h5>
-      <p class="note">Jenny</p>
-      <iframe src="http://www.youtube.com/embed/o0EaToGsJl4" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Wannabe - Spice Girls</h5>
-      <p class="note">Gwen and Puj</p>
-      <iframe src="http://www.youtube.com/embed/d_ilwnH1euw" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Immortals - Fall Out Boy</h5>
-      <p class="note">Toya</p>
-      <iframe src="http://www.youtube.com/embed/32n6gXvVRR0" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>I Choose You - Sara Bareilles</h5>
-      <p class="note">Lucy and Lexi</p>
-      <iframe src="http://www.youtube.com/embed/C91ql7bxxdg" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Everything's Alright - from "To The Moon"</h5>
-      <p class="note">Vincent</p>
-      <iframe src="http://www.youtube.com/embed/Q6P1zBKPD5E" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Reason - Hoobastank</h5>
-      <p class="note">Niki</p>
-      <iframe src="http://www.youtube.com/embed/hPrmC2XDRds" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Everything Is Awesome - from "The Lego Movie"</h5>
-      <p class="note">Lucy</p>
-      <iframe src="http://www.youtube.com/embed/JBtVZU2-ak8" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
   <br>
-
-  <div class="weekTitle">
-    <h2>Projects</h2>
-    <h3>Fall 2014</h3>
-  </div>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Shake It Off - Taylor Swift</h5>
-      <p class="note">Rachel and Sage</p>
-      <iframe src="http://www.youtube.com/embed/EGmMcth5ys4" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>The Wizard and I - from "Wicked"</h5>
-      <p class="note">Chris</p>
-      <iframe src="http://player.vimeo.com/video/114686853" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Sk8r Boy - originally by Avril Lavigne</h5>
-      <p class="note">(motown tribute by ScottBradleeLovesYa)</p>
-      <p class="note">Amalia</p>
-      <iframe src="http://www.youtube.com/embed/xz1ZHygugOA" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>A Thousand Miles - Vanessa Carlton</h5>
-      <p class="note">Wei</p>
-      <iframe src="http://www.youtube.com/embed/tAEZpJhNyuo" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Oceans - Hillsong</h5>
-      <p class="note">Yuyang</p>
-      <iframe src="http://www.youtube.com/embed/XqTBKspoBaU" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Lost Stars - from "Begin Again"</h5>
-      <p class="note">Rhucha And Alexis</p>
-      <iframe src="http://player.vimeo.com/video/113051958" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   
-  <a id="video">
-    <div class="contentBox">
-      <h5>Primadonna Girl - Marina and the Diamonds</h5>
-      <p class="note">Sonia and Christina</p>
-      <iframe src="http://player.vimeo.com/video/113055001" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>We're Going To Be Friends - The White Stripes</h5>
-      <p class="note">Kate and Kyle</p>
-      <iframe src="http://www.youtube.com/embed/WesmuN74EQA" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>You'll Be In My Heart - from "Tarzan"</h5>
-      <p class="note">Angela</p>
-      <iframe src="http://www.youtube.com/embed/_Q4xENse2So" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Home - Phillip Phillips</h5>
-      <p class="note">Jackie and Jeremy</p>
-      <iframe src="http://www.youtube.com/embed/_F_Z_lxWo0Y" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <div class="weekTitle">
-    <h2>Projects</h2>
-    <h3>Spring 2014</h3>
-  </div>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Summer Nights - from "Grease"</h5>
-      <p class="note">Deanna, Caitlyn, and Matthew</p>
-      <iframe src="http://player.vimeo.com/video/93169727" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-  
-  <a id="video">
-    <div class="contentBox">
-      <h5>A Whole New World - from "Aladdin"</h5>
-      <p class="note">Vivek and Michelle</p>
-      <iframe src="http://www.youtube.com/embed/to-vphsbQvU" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Let It Go - from "Frozen"</h5>
-      <p class="note">Maddison</p>
-      <iframe src="http://player.vimeo.com/video/93046295" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Happy - Pharrell Williams</h5>
-      <p class="note">Nina and Anum</p>
-      <iframe src="http://player.vimeo.com/video/93049669" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Fix You - Coldplay</h5>
-      <p class="note">Kavin and Paul</p>
-      <iframe src="http://www.youtube.com/embed/qITz9OSI47U" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Let It Go (full length)</h5>
-      <p class="note">Mari</p>
-      <iframe src="http://player.vimeo.com/video/93049670" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>You're So Great - Blur</h5>
-      <p class="note">Annabelle</p>
-      <iframe src="http://player.vimeo.com/video/93169726" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a id="video">
-    <div class="contentBox">
-      <h5>Thriller - Michael Jackson</h5>
-      <p class="note">Michael and Gordon</p>
-      <iframe src="http://player.vimeo.com/video/93564583" width="650" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </a>
-
-  <a class="button" href="./bonus.html">and Bonus Videos!</a>
 
 </body>
 

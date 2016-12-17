@@ -267,3 +267,31 @@ i {
 .full-width{
   width: 100%;
 }
+
+/* projects page */
+
+.project-semester-container {
+  display: block;
+}
+
+#projects-container .weekTitle:hover {
+  cursor: pointer;
+  background-color: #29a;
+  border-radius: 5px;
+}
+
+.project-video-wrapper {
+  height:365px;
+  width:650px; 
+  background:black no-repeat center;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  overflow:hidden;
+  cursor:pointer;
+}
+
+.hidden-project-video {
+  display: none;
+}

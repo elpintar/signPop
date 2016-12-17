@@ -5,7 +5,7 @@ var headerApp = angular.module('header', [])
 
   }]);
 
-$(document).ready(function () {  
+$(document).ready(function() {  
 
   // lyrics
 
@@ -34,6 +34,7 @@ $(document).ready(function () {
   //var s3bucket = "./gifs/";
   // sets up a play button image for a jquery element
   var setUpPlay = function(thisContainer) {
+    console.log(thisContainer);
     var playBox = $("<img>").attr({
       src: "./pictures/play.png",
       width: "180px",
