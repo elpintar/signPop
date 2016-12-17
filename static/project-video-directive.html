@@ -1,0 +1,22 @@
+
+<a id="video">
+  <div class="contentBox">
+    <h5>{{vidInfo.title}} - {{vidInfo.artist}}</h5>
+    <p class="note">{{vidInfo.student}}</p>
+    <div id="vid-wrap-{{vidInfo.youtubeId}}" ng-click="vidInfo.loaded=true;" class="project-video-wrapper">
+      <img ng-src="https://i.ytimg.com/vi_webp/1vftlXkn6AY/hqdefault.webp" ng-hide="vidInfo.loaded" width="650" height="365">
+      <iframe ng-show="vidInfo.loaded" width="650" height="365" ng-src="http://www.youtube.com/embed/1vftlXkn6AY?color=white" frameborder="0"></iframe>
+    </div>
+    <script type="text/javascript">
+
+    </script>
+  </div>
+</a>
+  
+<script type="text/javascript">
+  // function play(){
+  //   document.getElementById('vidwrap').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/1vftlXkn6AY?autoplay=1&color=white" frameborder="0"></iframe>';
+  // }
+</script>
+
+<!-- <div onclick="play();" id="vidwrap" style="height:365px;width:650px;background: black url('https://i.ytimg.com/vi_webp/1vftlXkn6AY/hqdefault.webp') no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow:hidden;cursor:pointer;">{{videoInfo.youtubeId}}</div><script type="text/javascript">function play(){document.getElementById('vidwrap').innerHTML = '<iframe width="650" height="365" src="http://www.youtube.com/embed/1vftlXkn6AY?autoplay=1&color=white" frameborder="0"></iframe>';}</script> -->
