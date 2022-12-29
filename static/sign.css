@@ -270,6 +270,31 @@ i {
 
 /* projects page */
 
+.projectShowcaseTitle h2 {
+  font-size: 2em;
+  margin-top: 1em;
+  margin-bottom: 0;
+  padding: 0.5em 1em;
+}
+
+.generationTitle h2 {
+  padding: .4em 1em;
+  margin: 1em;
+  max-width: 9em;
+  font-size: 1.5em;
+}
+
+.weekTitle h3 {
+  padding: .4em 1em;
+  max-width: 12em;
+}
+
+.generationTitle h2,
+.generationTitle h3 {
+  background-color: darkcyan;
+  color: yellow;
+}
+
 .project-semester-container {
   display: block;
 }
