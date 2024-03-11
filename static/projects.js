@@ -41,7 +41,7 @@ app.controller('ProjectsController', ['$scope', function($scope) {
 //         iframeElem.attr("width", "650");
 //         iframeElem.attr("height", "365");
 //         iframeElem.attr("frameborder", "0");
-//         var src = ("http://www.youtube.com/embed/" +
+//         var src = ("https://www.youtube.com/embed/" +
 //           scope.vidInfo.youtubeId + 
 //           "?autoplay=true&color=white");
 //         iframeElem.attr("src", src);
